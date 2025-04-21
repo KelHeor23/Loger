@@ -31,13 +31,13 @@ public:
     }
 
     void log_value(double value) {
-        auto now = std::chrono::system_clock::now();
+        /*auto now = std::chrono::system_clock::now();
         auto timestamp = std::chrono::duration_cast<std::chrono::microseconds>(
-                             now.time_since_epoch()).count();
+                             now.time_since_epoch()).count();*/
 
         json entry = {
-            {"value", value},
-            {"timestamp", timestamp}
+            {"value", value}//,
+            //{"timestamp", timestamp}
         };
 
         // Добавляем запятую перед всеми элементами кроме первого
